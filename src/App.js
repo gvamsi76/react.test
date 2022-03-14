@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Welcome from "./components/Welcome";
 
 // import { ProductList } from "./components/store/ProductList";
 // import Featchusers from "./components/store/Featchusers";
@@ -111,6 +112,7 @@ const App = () => {
       </Router>
       {/* <Featchusers /> */}
       {/* <ProductList /> */}
+      <Welcome />
     </>
 
   );
