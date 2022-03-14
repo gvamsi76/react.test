@@ -6,11 +6,14 @@ import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Featchusers from "./components/store/Featchusers";
+
+// import { ProductList } from "./components/store/ProductList";
+// import Featchusers from "./components/store/Featchusers";
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
+ 
 
   useEffect(() => {
     const getTasks = async () => {
@@ -81,6 +84,7 @@ const App = () => {
             onAdd={() => setShowAddTask(!showAddTask)}
             showAdd={showAddTask}
           />
+         
           <Routes>
             <Route
               path="/"
@@ -106,6 +110,7 @@ const App = () => {
         </div>
       </Router>
       {/* <Featchusers /> */}
+      {/* <ProductList /> */}
     </>
 
   );
